@@ -1,0 +1,10 @@
+{
+    "notifyConfig": {
+        "docs": "docs/notify/",
+        "events": [
+            "StriataNotify",
+            "Notify",
+            "notify"
+        ]
+    }
+}
