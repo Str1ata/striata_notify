@@ -1,6 +1,6 @@
 {
-    "notifyConfig": {
-        "docs": "docs/notify/",
+    "scriptConfig": {
+        "docs": "../resources/striata_notify/html/docs/",
         "events": [
             "StriataNotify",
             "Notify",
