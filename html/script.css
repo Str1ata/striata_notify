@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+
+body {
+	overflow: hidden;
+}
+
+#nuiNotify {
+	font-family: 'Montserrat', sans-serif;
+	position: absolute;
+	right: 1%;
+	top: 3%;
+	transform: skew(0.5turn, -2.5deg);
+	z-index: 10;
+}
+
+.notify {
+	width: 20vw;
+	height: 100%;
+	background-color: rgb(36, 35, 35);
+	border-radius: 1.0vw;
+	margin-bottom: 1vw;
+	overflow: hidden;
+
+  	animation-name: slideInRight;
+  	animation-duration: 0.5s;
+  	animation-fill-mode: both;
+	
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0)
+}
+
+.icon {
+	margin-left: 1vw;
+	margin-top: 1vw;
+	width: 2vw;
+}
+
+.notify-type {
+	color: rgb(255, 255, 255);
+	padding-left: 10%;
+	padding-right: 10%;
+	font-weight: 500;
+	font-size: 1.2vw;
+	margin-top: -3vw;
+	text-align: center;
+
+	word-wrap: break-word;
+	width: 80%;
+	position: relative;
+	left: 5%;	  
+}
+
+#notify-time {
+	color: rgb(255, 255, 255);
+
+	margin-left: 19.25vw;
+	height: 88%;
+	position: absolute;
+	top: 0%;
+
+	border-top-right-radius: 1.0vw;
+	border-bottom-right-radius: 1.0vw;
+	border-top-left-radius: 1.0vw;
+	border-bottom-left-radius: 1.0vw;
+
+}
+
+.notify-text {
+	color: rgba(211, 211, 211, 0.75);
+	
+	padding-top: 0.5%;
+	padding-right: 10%;
+	padding-left: 10%;
+	padding-bottom: 5%;
+
+	font-weight: 500;
+	font-size: 1vw;
+	margin-top: 0vw;
+	text-align: center;
+
+  	animation-name: slideInLeft;
+  	animation-duration: 0.75s;
+  	animation-fill-mode: both;
+
+	word-wrap: break-word;
+	width: 80%;
+	position: relative;
+	left: 5%;	  
+}
+
+#notify-effect {
+	width: 100%;
+	height: 10px;
+}
+
+@keyframes slideInRight {
+	0% {
+		-webkit-transform: translateX(100%);
+		transform: translateX(100%);
+		visibility: visible;
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInLeft {
+	0% {
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
+		visibility: visible;
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
